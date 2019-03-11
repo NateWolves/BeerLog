@@ -1,0 +1,12 @@
+<li id="beer{{id}}">
+	<p><b>{{beer_name}}</b> a {{beer_type}}</p>
+	<p>Made by <b>{{brewery}}</b></p>
+	<p id="notes{{id}}">{{notes}}</p>
+	
+	{{!-- <button type="button" class="change-note btn btn-success" data-id="{{id}}" data-toggle="tooltip" data-placement="bottom" title="Add a Note">
+ 	 +
+	</button> --}}
+	<button class="change-drank btn btn-outline-danger" data-id="{{id}}" data-drank="{{drank}}">
+		{{#if drank}}Cancel{{else}}Consume{{/if}}
+	</button>
+</li>

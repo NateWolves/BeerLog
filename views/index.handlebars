@@ -1,0 +1,52 @@
+<div class="container">
+<h1>Beer List</h1>
+<div class="row">
+    <div class="col-sm-6">
+    <h3>To Drink</h3>
+
+    <ul>
+        {{#each beers}}
+            {{#unless drank}}
+             {{> beers/beer-block drank=false}}
+            {{/unless}}
+        {{/each}}
+    </ul>
+    </div>
+
+    <div class="col-sm-6">
+    <h3>Drank</h3>
+
+    <ul>
+        {{#each beers}}
+            {{#if drank}}
+             {{> beers/beer-block drank=true}}
+            {{/if}}
+        {{/each}}
+    </ul>
+    </div>
+</div>
+
+
+<h2>Add a Beer</h2>
+<form class="create-form">
+    <div class="row">
+  <div class="form-group col">
+    <label for="beer_name">Beer Name</label>
+    <input type="text" class="form-control" id="beer_name" placeholder="Little Sumpin">
+  </div>
+  <div class="form-group col">
+    <label for="type">Beer Type</label>
+    <input type="text" class="form-control" id="beer_type" placeholder="Pale Wheat Ale">
+  </div>
+  </div>
+  <div class="form-group">
+      <label for="brewery">Brewery</label>
+      <input type="text" class="form-control" id="brewery" placeholder="Lagunitas Brewing Company">
+  </div>
+  <div class="form-group">
+      <label for="notes">Notes</label>
+      <textarea type="text" class="form-control" id="notes" placeholder="Way smooth and silky with a nice wheatly-esque-ish-ness. A truly unique style featuring a strong hop finish on a silky body."></textarea>
+  </div>
+  <button type="submit">Add Beer</button>
+</form>
+</div>

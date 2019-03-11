@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Store the beers you would like to drink along with reflections of the beers you have drank.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NateWolves/burger.git"
+  },
+  "author": "Nathan Wolverton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NateWolves/burger/issues"
+  },
+  "homepage": "https://github.com/NateWolves/burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.1.0",
+    "mysql": "^2.16.0"
+  }
+}
